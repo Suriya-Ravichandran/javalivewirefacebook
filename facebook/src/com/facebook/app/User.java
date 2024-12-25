@@ -1,7 +1,7 @@
 package com.facebook.app;
 
 import java.util.Scanner;
-public class User {
+public class User extends Post{
 	
 	private String name;
 	private String bio;

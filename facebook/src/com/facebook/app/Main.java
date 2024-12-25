@@ -16,7 +16,7 @@ public class Main {
 			System.out.println("-----------Login page----------");
 			u1.setname();
 			System.out.println("Enter password: ");
-			String password=scn.nextLine();
+			String password=scn.next();
 			String verifypassword=u1.getpassword();
 //			verify password
 			if(password.equals(verifypassword)) {
@@ -24,7 +24,7 @@ public class Main {
 			System.out.println("------------------------------------");
 //			loop start
 			while(true) {
-			System.out.println("Edit Your profile press 1\nView Profile press 2\nLogout to Press 0");
+			System.out.println("Edit Your profile press 1\nView Profile press 2\n Add post to press 3\nLogout to Press 0");
 			int option=scn.nextInt();
 			if(option==1) {
 				u1.setname();
@@ -36,6 +36,12 @@ public class Main {
 			else if(option==2) {
 				System.out.println("-------------User profile-------------");
 				u1.getdata();
+				System.out.println("-------------Posts-------------");
+				u1.getpost();
+				
+			}
+			else if(option==3) {
+				u1.Addpost();
 			}
 			else if(option==0) {
 				System.out.println("Logout....");
