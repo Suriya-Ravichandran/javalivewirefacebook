@@ -10,9 +10,9 @@ public class ButtonSwing {
 
 	public static void main(String[] args) {
 		JFrame o=new JFrame("Alert App");
-		JButton btn=new JButton("Click me");
-		btn.setPreferredSize(new Dimension(100,40));
-		btn.addActionListener(new ActionListener() {
+		 JButton b=new JButton("Click Here");  
+		 b.setBounds(50,100,95,30);  
+		 b.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -21,8 +21,9 @@ public class ButtonSwing {
 			}
 			
 		});
-		o.add(btn);
-		o.setSize(300, 300);
+		o.add(b);
+		o.setSize(400, 400);
+		o.setLayout(null);		
 		o.setVisible(true);
 		o.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
